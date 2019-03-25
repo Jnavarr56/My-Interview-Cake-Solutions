@@ -2,8 +2,6 @@ const mergeRanges = (mtgs) => {
 
   mtgs.sort((a, b) => a.startTime - b.startTime);
 
-  console.log(mtgs);
-
   let mgd = [], mtgData;
 
   mtgs.reduce((lMtg, cMtg, i, mtgs) => {
@@ -17,8 +15,6 @@ const mergeRanges = (mtgs) => {
     return mtgData.mtg;
 
   });
-
-  console.log(mgd);
 
   return mgd;
   

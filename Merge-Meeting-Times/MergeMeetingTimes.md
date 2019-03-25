@@ -23,7 +23,7 @@ For example, given:
 your method would return:
 
 ``` ruby
-  `[[0, 1], [3, 8], [9, 12]]`
+  [[0, 1], [3, 8], [9, 12]]
 ```
 
 Do not assume the meetings are in order. The meeting times are coming from multiple teams.
