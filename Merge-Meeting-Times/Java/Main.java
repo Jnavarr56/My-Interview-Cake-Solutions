@@ -11,7 +11,6 @@ public class Main {
 
     }
 
-    
     public static List<Meeting> mergeRanges(List<Meeting> meetings) {
 
         Collections.sort(meetings);
@@ -44,11 +43,31 @@ public class Main {
 
         merged.add(newMeeting);
 
-        for (Meeting m : merged) {
+        System.out.println("");
 
-            System.out.println(m.formattedStr());
+        System.out.print("[ ");
+
+        for (Meeting m : meetings) {
+
+            System.out.print("[" + m.formattedStr() + "] ");
 
         }
+
+        System.out.print("]");
+
+        System.out.print(" ===== MERGED INTO ===>> ");
+
+        System.out.print("[ ");
+
+        for (Meeting m : merged) {
+
+            System.out.print("[" + m.formattedStr() + "] ");
+
+        }
+
+        System.out.print("]");
+
+        System.out.println("\n");
 
         return meetings;
     }
